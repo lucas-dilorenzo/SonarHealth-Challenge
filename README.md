@@ -1,13 +1,46 @@
-# testSonarHealth
+# SonarHealth Challenge
 
-To test the email validation its only requiere:
-- at least one number or letter 
-- Follow by the character "@"
-- at least one number or letter 
-- and in the end a "." + at least two letters
+Challenge técnico iOS desarrollado en Swift. La aplicación implementa un validador de emails con reglas específicas.
 
-Examples:
-adsa@sonarhealt.co -> Valid
-dasdasd@sonarhealt.c -> Invalid
+## Requisitos de validación
 
-![image](https://user-images.githubusercontent.com/62031847/138733409-d0f209f3-d07e-4e2e-a907-1314f535afd4.png)
+Un email es válido si cumple con el siguiente formato:
+
+- Al menos una letra o número
+- Seguido del carácter `@`
+- Al menos una letra o número
+- Finaliza con `.` seguido de al menos dos letras
+
+**Ejemplos:**
+
+| Email | Resultado |
+|-------|-----------|
+| `adsa@sonarhealth.co` | ✅ Válido |
+| `dasdasd@sonarhealth.c` | ❌ Inválido |
+
+![Preview](https://user-images.githubusercontent.com/62031847/138733409-d0f209f3-d07e-4e2e-a907-1314f535afd4.png)
+
+## Tecnologías
+
+- **Lenguaje:** Swift
+- **Plataforma:** iOS
+- **IDE:** Xcode
+
+## Estructura
+
+```
+testSH/
+├── AppDelegate.swift
+├── SceneDelegate.swift
+├── ViewController.swift
+└── General/
+    └── Extensions.swift
+```
+
+## Instalación
+
+```bash
+git clone https://github.com/lucas-dilorenzo/SonarHealth-Challenge.git
+cd SonarHealth-Challenge
+open testSH/testSH.xcodeproj
+```
